@@ -9,11 +9,7 @@ namespace LCD_Kat.Tests
         [Fact]
         public void NumberOne_PrintNumberOne()
         {
-            const string expectedValue = @"   \r\n" +
-                                         @"  |\r\n" +
-                                         @"   \r\n" +
-                                         @"  |\r\n" +
-                                         @"   \r\n";
+            const string expectedValue = @"   \r\n  |\r\n   \r\n  |\r\n   ";
 
             var numberPicker = new NumberPicker();
             var multipleNumberFinder = new MultipleNumberFinder();
