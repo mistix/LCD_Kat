@@ -4,8 +4,8 @@ namespace LCD_Kat
 {
     public class LCDMonitor
     {
-        private INumberPicker _numberPicker;
-        private IMultipleNumberFinder _multipleFinder;
+        private readonly INumberPicker _numberPicker;
+        private readonly IMultipleNumberFinder _multipleFinder;
 
         public LCDMonitor(INumberPicker numberPicker, IMultipleNumberFinder multipleFinder)
         {

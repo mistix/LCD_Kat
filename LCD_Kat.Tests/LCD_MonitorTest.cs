@@ -9,13 +9,16 @@ namespace LCD_Kat.Tests
         [Fact]
         public void NumberOne_PrintNumberOne()
         {
-            const string expectedValue = "   " +
-                                         "  |" +
-                                         "   " +
-                                         "  |" +
-                                         "   ";
+            const string expectedValue = @"   \r\n" +
+                                         @"  |\r\n" +
+                                         @"   \r\n" +
+                                         @"  |\r\n" +
+                                         @"   \r\n";
 
-            var monitor = new LCDMonitor();
+            var numberPicker = new NumberPicker();
+            var multipleNumberFinder = new MultipleNumberFinder();
+
+            var monitor = new LCDMonitor(numberPicker, multipleNumberFinder);
 
             string actualValue = monitor.PrintNumber(1);
 

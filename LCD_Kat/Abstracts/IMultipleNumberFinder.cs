@@ -4,12 +4,4 @@ namespace LCD_Kat.Abstracts
     {
         NumberCount GetNumberCount(int number);
     }
-
-    public class MultipleNumberFinder : IMultipleNumberFinder
-    {
-        public NumberCount GetNumberCount(int number)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
 }
