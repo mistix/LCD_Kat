@@ -1,4 +1,5 @@
 ﻿using LCD_Kat.Strategies;
+using LCD_Kat.Utilities;
 using Xunit;
 using Xunit.Extensions;
 
@@ -10,7 +11,8 @@ namespace LCD_Kat.Tests
 
         public SingleNumberStrategyTest()
         {
-            _strategy = new SingleNumberStrategy();
+            var generator = new GenerateLcdNumber();
+            _strategy = new SingleNumberStrategy(generator);
         }
 
         [Theory]

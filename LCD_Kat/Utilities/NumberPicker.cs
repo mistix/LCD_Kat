@@ -2,7 +2,7 @@
 using LCD_Kat.Abstracts;
 using LCD_Kat.Strategies;
 
-namespace LCD_Kat
+namespace LCD_Kat.Utilities
 {
     public class NumberPicker : INumberPicker
     {
@@ -11,9 +11,10 @@ namespace LCD_Kat
             switch (numberCount)
             {
                 case NumberCount.SingleNumber:
-                    return new SingleNumberStrategy();
+                    // FIXME: change way of injecting this class
+                    return new SingleNumberStrategy(new GenerateLcdNumber());
                 case NumberCount.MultipleNumber:
-                    return new MultipleNumberStrategy();
+                    return new MultipleNumberStrategy(new NumberSplitter(new GenerateLcdNumber()));
                 default:
                     throw new ArgumentOutOfRangeException("numberCount");
             }

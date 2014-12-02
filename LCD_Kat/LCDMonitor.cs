@@ -1,4 +1,5 @@
 using LCD_Kat.Abstracts;
+using LCD_Kat.Utilities;
 
 namespace LCD_Kat
 {

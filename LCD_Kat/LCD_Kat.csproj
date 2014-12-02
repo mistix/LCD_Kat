@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\IGenerateLcdNumber.cs" />
     <Compile Include="Abstracts\ILCDNumber.cs" />
     <Compile Include="Abstracts\IMultipleNumberFinder.cs" />
     <Compile Include="Abstracts\INumberCreationStrategy.cs" />
     <Compile Include="Abstracts\INumberPicker.cs" />
-    <Compile Include="MultipleNumberFinder.cs" />
-    <Compile Include="NumberPicker.cs" />
+    <Compile Include="Abstracts\INumberSplitter.cs" />
+    <Compile Include="Utilities\MultipleNumberFinder.cs" />
+    <Compile Include="Utilities\NumberPicker.cs" />
     <Compile Include="LCDMonitor.cs" />
-    <Compile Include="NumberCount.cs" />
+    <Compile Include="Utilities\NumberCount.cs" />
+    <Compile Include="Utilities\NumberSplitter.cs" />
     <Compile Include="Numbers\EightLcdNumber.cs" />
     <Compile Include="Numbers\FiveLcdNumber.cs" />
     <Compile Include="Numbers\FourLcdNumber.cs" />
@@ -68,6 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\MultipleNumberStrategy.cs" />
     <Compile Include="Strategies\SingleNumberStrategy.cs" />
+    <Compile Include="Utilities\GenerateLcdNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

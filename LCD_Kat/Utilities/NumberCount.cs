@@ -1,4 +1,4 @@
-﻿namespace LCD_Kat
+﻿namespace LCD_Kat.Utilities
 {
     public enum NumberCount
     {

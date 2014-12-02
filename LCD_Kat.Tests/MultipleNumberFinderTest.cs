@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using LCD_Kat.Utilities;
+using Xunit;
 using Xunit.Extensions;
 
 namespace LCD_Kat.Tests

@@ -1,4 +1,5 @@
 ﻿using System.Dynamic;
+using LCD_Kat.Utilities;
 using Ninject;
 using Xunit;
 

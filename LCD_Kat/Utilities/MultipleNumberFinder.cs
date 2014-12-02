@@ -1,7 +1,7 @@
 using System;
 using LCD_Kat.Abstracts;
 
-namespace LCD_Kat
+namespace LCD_Kat.Utilities
 {
     public class MultipleNumberFinder : IMultipleNumberFinder
     {
