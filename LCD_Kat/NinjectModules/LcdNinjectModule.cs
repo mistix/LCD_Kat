@@ -2,7 +2,7 @@
 using LCD_Kat.Utilities;
 using Ninject.Modules;
 
-namespace LCD_Kat
+namespace LCD_Kat.NinjectModules
 {
     public class LcdNinjectModule : NinjectModule
     {

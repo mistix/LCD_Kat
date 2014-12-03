@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using LCD_Kat.Abstracts;
+using LCD_Kat.NinjectModules;
 using Ninject;
 
 namespace LCD_Kat
