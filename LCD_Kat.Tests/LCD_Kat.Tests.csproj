@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="LCD_MonitorTest.cs" />
     <Compile Include="MultipleNumberFinderTest.cs" />
+    <Compile Include="MultipleNumberStrategyTest.cs" />
     <Compile Include="NumberSplitterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleNumberStrategyTest.cs" />

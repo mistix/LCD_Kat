@@ -4,6 +4,6 @@ namespace LCD_Kat.Abstracts
 {
     public interface INumberSplitter
     {
-        IEnumerable<ILCDNumber> SplitNumber(int number);
+        IEnumerable<ILcdNumber> SplitNumber(int number);
     }
 }

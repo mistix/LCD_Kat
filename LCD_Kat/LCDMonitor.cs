@@ -5,19 +5,19 @@ namespace LCD_Kat
 {
     public class LCDMonitor
     {
-        private readonly INumberPicker _numberPicker;
+        private readonly INumberPickerFactory _numberPickerFactory;
         private readonly IMultipleNumberFinder _multipleFinder;
 
-        public LCDMonitor(INumberPicker numberPicker, IMultipleNumberFinder multipleFinder)
+        public LCDMonitor(INumberPickerFactory numberPickerFactory, IMultipleNumberFinder multipleFinder)
         {
-            _numberPicker = numberPicker;
+            _numberPickerFactory = numberPickerFactory;
             _multipleFinder = multipleFinder;
         }
 
         public string PrintNumber(int number)
         {
             NumberCount numberCount = _multipleFinder.GetNumberCount(number);
-            INumberCreationStrategy creationStrategy = _numberPicker.Create(numberCount);
+            INumberCreationStrategy creationStrategy = _numberPickerFactory.Create(numberCount);
 
             return creationStrategy.ConvertNumber(number);
         }

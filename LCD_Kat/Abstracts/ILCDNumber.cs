@@ -1,7 +1,7 @@
 ﻿namespace LCD_Kat.Abstracts
 {
-    public interface ILCDNumber
+    public interface ILcdNumber
     {
-        string PrintNumber();
+        char[,] PrintNumber();
     }
 }

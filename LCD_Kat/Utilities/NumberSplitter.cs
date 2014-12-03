@@ -13,7 +13,7 @@ namespace LCD_Kat.Utilities
             _numberGenerator = numberGenerator;
         }
 
-        public IEnumerable<ILCDNumber> SplitNumber(int number)
+        public IEnumerable<ILcdNumber> SplitNumber(int number)
         {
             int initialNumber = number;
             var numberStack = new Stack<int>();

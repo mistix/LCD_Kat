@@ -16,16 +16,16 @@ namespace LCD_Kat.Tests
         }
 
         [Theory]
-        [InlineData(0, @" - \r\n| |\r\n   \r\n| |\r\n - ")]
-        [InlineData(1, @"   \r\n  |\r\n   \r\n  |\r\n   ")]
-        [InlineData(2, @" - \r\n  |\r\n - \r\n|  \r\n - ")]
-        [InlineData(3, @" - \r\n  |\r\n - \r\n  |\r\n - ")]
-        [InlineData(4, @"   \r\n| |\r\n - \r\n  |\r\n   ")]
-        [InlineData(5, @" - \r\n|  \r\n - \r\n  |\r\n - ")]
-        [InlineData(6, @" - \r\n|  \r\n - \r\n| |\r\n - ")]
-        [InlineData(7, @" - \r\n  |\r\n   \r\n  |\r\n   ")]
-        [InlineData(8, @" - \r\n| |\r\n - \r\n| |\r\n - ")]
-        [InlineData(9, @" - \r\n| |\r\n - \r\n  |\r\n - ")]
+        [InlineData(0, " - \r\n| |\r\n   \r\n| |\r\n - ")]
+        [InlineData(1, "   \r\n  |\r\n   \r\n  |\r\n   ")]
+        [InlineData(2, " - \r\n  |\r\n - \r\n|  \r\n - ")]
+        [InlineData(3, " - \r\n  |\r\n - \r\n  |\r\n - ")]
+        [InlineData(4, "   \r\n| |\r\n - \r\n  |\r\n   ")]
+        [InlineData(5, " - \r\n|  \r\n - \r\n  |\r\n - ")]
+        [InlineData(6, " - \r\n|  \r\n - \r\n| |\r\n - ")]
+        [InlineData(7, " - \r\n  |\r\n   \r\n  |\r\n   ")]
+        [InlineData(8, " - \r\n| |\r\n - \r\n| |\r\n - ")]
+        [InlineData(9, " - \r\n| |\r\n - \r\n  |\r\n - ")]
         public void CreateNumberOnAsLcd(int number, string lcdRepresentation)
         {
             var lcdNumber = _strategy.ConvertNumber(number);

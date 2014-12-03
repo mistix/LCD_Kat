@@ -6,7 +6,7 @@ namespace LCD_Kat.Utilities
 {
     public class GenerateLcdNumber : IGenerateLcdNumber
     {
-        public ILCDNumber GetNumber(int number)
+        public ILcdNumber GetNumber(int number)
         {
             switch (number)
             {

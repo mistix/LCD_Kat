@@ -52,8 +52,9 @@
     <Compile Include="Abstracts\INumberCreationStrategy.cs" />
     <Compile Include="Abstracts\INumberPicker.cs" />
     <Compile Include="Abstracts\INumberSplitter.cs" />
+    <Compile Include="LcdNinjectModule.cs" />
     <Compile Include="Utilities\MultipleNumberFinder.cs" />
-    <Compile Include="Utilities\NumberPicker.cs" />
+    <Compile Include="Utilities\NumberPickerFactory.cs" />
     <Compile Include="LCDMonitor.cs" />
     <Compile Include="Utilities\NumberCount.cs" />
     <Compile Include="Utilities\NumberSplitter.cs" />

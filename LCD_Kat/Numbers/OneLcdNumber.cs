@@ -2,11 +2,18 @@ using LCD_Kat.Abstracts;
 
 namespace LCD_Kat.Numbers
 {
-    public class OneLcdNumber : ILCDNumber
+    public class OneLcdNumber : ILcdNumber
     {
-        public string PrintNumber()
+        public char[,] PrintNumber()
         {
-            return @"   \r\n  |\r\n   \r\n  |\r\n   ";
+            return new char[5, 3]
+            {
+                {' ', ' ', ' '},
+                {' ', ' ', '|'},
+                {' ', ' ', ' '},
+                {' ', ' ', '|'},
+                {' ', ' ', ' '}
+            };
         }
     }
 }

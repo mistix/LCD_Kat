@@ -2,7 +2,7 @@
 
 namespace LCD_Kat.Abstracts
 {
-    public interface INumberPicker
+    public interface INumberPickerFactory
     {
         INumberCreationStrategy Create(NumberCount numberCount);
     }

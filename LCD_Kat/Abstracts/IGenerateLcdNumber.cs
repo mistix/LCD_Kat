@@ -2,6 +2,6 @@
 {
     public interface IGenerateLcdNumber
     {
-        ILCDNumber GetNumber(int number);
+        ILcdNumber GetNumber(int number);
     }
 }
